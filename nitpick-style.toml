@@ -26,6 +26,14 @@ id = "black"
 [[".pre-commit-config.yaml".repos.hooks]]
 id = "black-jupyter"
 
+#### bump2version #############################################################
+[[".pre-commit-config.yaml".repos]]
+repo = "https://github.com/dycw/pre-commit-hooks"
+
+[[".pre-commit-config.yaml".repos.hooks]]
+id = "run-bump2version"
+args = ["--setup-cfg"]
+
 #### coverage #################################################################
 ["pyproject.toml".tool.coverage.run]
 branch = true
