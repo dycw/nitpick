@@ -63,6 +63,7 @@ dependencies = []
 [project.optional-dependencies]
 dev = [
   "black",
+  "bump2version",
   "flake8",
   "flake8-absolute-import",
   "flake8-annotations",
