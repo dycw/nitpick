@@ -1,0 +1,2 @@
+# nitnick
+Nitpick settings
