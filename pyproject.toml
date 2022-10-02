@@ -5,8 +5,6 @@ skip-magic-trailing-comma = true
 target-version = ["py310"]
 
 #### coverage #################################################################
-[tool.coverage]
-
 [tool.coverage.run]
 branch = true
 data_file = ".coverage/data"
