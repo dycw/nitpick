@@ -15,7 +15,6 @@ args = [
 ["pyproject.toml".tool.black]
 line-length = 80
 skip-magic-trailing-comma = true
-target-version = ["py310"]
 
 [[".pre-commit-config.yaml".repos]]
 repo = "https://github.com/psf/black"
@@ -68,7 +67,6 @@ extend-ignore = "ANN101,ANN102,B008,U101"
 # B008: flake8-bugbear: Do not perform function calls in argument defaults
 # U101: flake8-unused-arguments: Unused argument '_.'
 max-line-length = 88
-min-python-version = "3.10"
 per-file-ignores = "test_*.py:S101"
 show-source = true
 unused-arguments-ignore-variadic-names = true
@@ -155,6 +153,11 @@ args = [
 ]
 files = '^pyproject\.toml$'
 
+#### project ##################################################################
+["pyproject.toml".project]
+dynamic = ["version"]
+readme = "README.md"
+
 #### pre-commit hooks #########################################################
 [[".pre-commit-config.yaml".repos]]
 repo = "https://github.com/pre-commit/pre-commit-hooks"
@@ -200,7 +203,6 @@ id = "prettier"
 #### pyright ##################################################################
 ["pyproject.toml".tool.pyright]
 include = ["src"]
-pythonVersion = "3.10"
 executionEnvironments = [{ root = "src" }]
 typeCheckingMode = "strict"
 reportMissingTypeStubs = false
@@ -243,14 +245,6 @@ looponfailroots = ["src"]
 minversion = "7.0"
 testpaths = ["src/tests"]
 xfail_strict = true
-
-#### pyupgrade ################################################################
-[[".pre-commit-config.yaml".repos]]
-repo = "https://github.com/asottile/pyupgrade"
-
-[[".pre-commit-config.yaml".repos.hooks]]
-id = "pyupgrade"
-args = ["--py310-plus"]
 
 #### shellcheck ###############################################################
 [[".pre-commit-config.yaml".repos]]
