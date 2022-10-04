@@ -46,7 +46,11 @@ skip_gitignore = true
 
 #### nitpick ##################################################################
 [tool.nitpick]
-style = ["styles/common.toml", "styles/3.10.toml"]
+style = [
+  "styles/common.toml",
+  "styles/3.10.toml",
+  "styles/pip-compile-generate-hashes.toml"
+]
 cache = "never"
 
 #### project ##################################################################
