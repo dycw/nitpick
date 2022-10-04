@@ -46,7 +46,7 @@ skip_gitignore = true
 
 #### nitpick ##################################################################
 [tool.nitpick]
-style = "nitpick-style.toml"
+style = ["styles/common.toml", "styles/3.10.toml"]
 cache = "never"
 
 #### project ##################################################################
