@@ -50,7 +50,7 @@ skip_gitignore = true
 style = [
   "styles/common.toml",
   "styles/3.10.toml",
-  "styles/pip-compile-generate-hashes.toml"
+  "styles/pip-compile-no-hashes.toml"
 ]
 cache = "never"
 
@@ -126,7 +126,6 @@ filterwarnings = [
   "ignore::DeprecationWarning",
   "ignore:Implicitly cleaning up <TemporaryDirectory '.*'>:ResourceWarning",
 ]
-looponfailroots = ["src"]
 minversion = "7.0"
 testpaths = ["src/tests"]
 xfail_strict = true
