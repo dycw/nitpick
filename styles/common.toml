@@ -84,7 +84,7 @@ additional_dependencies = [
   "flake8-bugbear",
   "flake8-comprehensions",
   "flake8-debugger",
-  "flake8-eradicate",
+  # "flake8-eradicate",
   "flake8-executable",
   "flake8-no-pep420",
   "flake8-pie",
@@ -214,7 +214,6 @@ addopts = [
   "--tb=native"
 ]
 filterwarnings = ["error"]
-looponfailroots = ["src"]
 minversion = "7.0"
 testpaths = ["src/tests"]
 xfail_strict = true
@@ -239,7 +238,7 @@ additional_dependencies = [
   "flake8-bugbear",
   "flake8-comprehensions",
   "flake8-debugger",
-  "flake8-eradicate",
+  # "flake8-eradicate",
   "flake8-executable",
   "flake8-no-pep420",
   "flake8-pie",
