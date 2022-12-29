@@ -40,7 +40,6 @@ directory = ".coverage/html"
 ".bump2version.cfg" = ""
 
 [nitpick.files.absent]
-".bumpversion.cfg" = ""
 ".flake8" = ""
 ".isort.cfg" = ""
 "MANIFEST.in" = ""
