@@ -2,10 +2,6 @@
 ["pyproject.toml".tool.black]
 target-version = ["py39"]
 
-#### flake8 ###################################################################
-["setup.cfg".flake8]
-min-python-version = "3.9"
-
 #### project ##################################################################
 ["pyproject.toml".project]
 requires-python = ">= 3.9"
@@ -21,3 +17,7 @@ repo = "https://github.com/asottile/pyupgrade"
 [[".pre-commit-config.yaml".repos.hooks]]
 id = "pyupgrade"
 args = ["--py39-plus"]
+
+#### ruff #####################################################################
+["pyproject.toml".tool.ruff]
+target-version = "py39"

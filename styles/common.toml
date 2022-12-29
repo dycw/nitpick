@@ -1,16 +1,3 @@
-#### autoflake ################################################################
-[[".pre-commit-config.yaml".repos]]
-repo = "https://github.com/myint/autoflake"
-
-[[".pre-commit-config.yaml".repos.hooks]]
-id = "autoflake"
-args = [
-  "--in-place",
-  "--remove-all-unused-imports",
-  "--remove-duplicate-keys",
-  "--remove-unused-variables",
-]
-
 #### black ####################################################################
 ["pyproject.toml".tool.black]
 line-length = 80
@@ -31,7 +18,6 @@ repo = "https://github.com/dycw/pre-commit-hooks"
 
 [[".pre-commit-config.yaml".repos.hooks]]
 id = "run-bump2version"
-args = ["--setup-cfg"]
 
 #### coverage #################################################################
 ["pyproject.toml".tool.coverage.run]
@@ -51,47 +37,15 @@ directory = ".coverage/html"
 #### files ####################################################################
 [nitpick.files.present]
 "pyproject.toml" = ""
-"setup.cfg" = ""
+".bump2version.cfg" = ""
 
 [nitpick.files.absent]
 ".bumpversion.cfg" = ""
 ".flake8" = ""
 ".isort.cfg" = ""
 "MANIFEST.in" = ""
+"setup.cfg" = ""
 "setup.py" = ""
-
-#### flake8 ###################################################################
-["setup.cfg".flake8]
-extend-ignore = "ANN101,ANN102,B008,U101"
-# ANN101: flake8-annotations: Missing type annotation for self in method
-# ANN102: flake8-annotations: Missing type annotation for cls in method
-# B008: flake8-bugbear: Do not perform function calls in argument defaults
-# U101: flake8-unused-arguments: Unused argument '_.'
-max-line-length = 88
-per-file-ignores = "test_*.py:S101"
-show-source = true
-unused-arguments-ignore-variadic-names = true
-
-[[".pre-commit-config.yaml".repos]]
-repo = "https://github.com/pycqa/flake8"
-
-[[".pre-commit-config.yaml".repos.hooks]]
-id = "flake8"
-additional_dependencies = [
-  "flake8-absolute-import",
-  "flake8-annotations",
-  "flake8-bandit",
-  "flake8-bugbear",
-  "flake8-comprehensions",
-  "flake8-debugger",
-  # "flake8-eradicate",
-  "flake8-executable",
-  "flake8-no-pep420",
-  "flake8-pie",
-  "flake8-print",
-  "flake8-simplify",
-  "flake8-unused-arguments",
-]
 
 #### hatch ####################################################################
 ["pyproject.toml".build-system]
@@ -100,24 +54,6 @@ build-backend = "hatchling.build"
 
 ["pyproject.toml".tool.hatch.build]
 sources = ["src"]
-
-#### isort ####################################################################
-["pyproject.toml".tool.isort]
-atomic = true
-case_sensitive = true
-float_to_top = true
-force_single_line = true
-line_length = 80
-lines_after_imports = 2
-profile = "black"
-remove_redundant_aliases = true
-skip_gitignore = true
-
-[[".pre-commit-config.yaml".repos]]
-repo = "https://github.com/pycqa/isort"
-
-[[".pre-commit-config.yaml".repos.hooks]]
-id = "isort"
 
 #### nitpick ##################################################################
 [[".pre-commit-config.yaml".repos]]
@@ -176,9 +112,11 @@ id = "prettier"
 #### pyright ##################################################################
 ["pyproject.toml".tool.pyright]
 include = ["src"]
+exclude = ["**/__pycache__", ".direnv", ".git", ".venv"]
 executionEnvironments = [{ root = "src" }]
 typeCheckingMode = "strict"
 reportMissingTypeStubs = false
+reportIncompatibleMethodOverride = false
 reportMissingTypeArgument = false
 reportPrivateUsage = false
 reportPrivateImportUsage = false
@@ -218,31 +156,29 @@ minversion = "7.0"
 testpaths = ["src/tests"]
 xfail_strict = true
 
+#### ruff #####################################################################
+["pyproject.toml".tool.ruff]
+fix = true
+line-length = 80
+src = ["src", "tests"]
+
+["pyproject.toml".tool.ruff.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+["pyproject.toml".tool.ruff.isort]
+force-single-line = true
+known-first-party = ["src", "tests"]
+
+[[".pre-commit-config.yaml".repos]]
+repo = "https://github.com/charliermarsh/ruff-pre-commit"
+
+[[".pre-commit-config.yaml".repos.hooks]]
+id = "ruff"
+args = ["--fix"]
+
 #### shellcheck ###############################################################
 [[".pre-commit-config.yaml".repos]]
 repo = "https://github.com/shellcheck-py/shellcheck-py"
 
 [[".pre-commit-config.yaml".repos.hooks]]
 id = "shellcheck"
-
-#### yesqa ####################################################################
-[[".pre-commit-config.yaml".repos]]
-repo = "https://github.com/asottile/yesqa"
-
-[[".pre-commit-config.yaml".repos.hooks]]
-id = "yesqa"
-additional_dependencies = [
-  "flake8-absolute-import",
-  "flake8-annotations",
-  "flake8-bandit",
-  "flake8-bugbear",
-  "flake8-comprehensions",
-  "flake8-debugger",
-  # "flake8-eradicate",
-  "flake8-executable",
-  "flake8-no-pep420",
-  "flake8-pie",
-  "flake8-print",
-  "flake8-simplify",
-  "flake8-unused-arguments",
-]
