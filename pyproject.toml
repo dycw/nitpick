@@ -67,12 +67,7 @@ dev = [
 #### pyright ##################################################################
 [tool.pyright]
 include = ["src"]
-exclude = [
-  "**/__pycache__",
-  ".direnv",
-  ".git",
-  ".venv",
-]
+exclude = ["**/__pycache__", ".direnv", ".git", ".venv"]
 pythonVersion = "3.9"
 executionEnvironments = [{ root = "src" }]
 typeCheckingMode = "strict"
