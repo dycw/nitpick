@@ -81,7 +81,6 @@ reportUnknownMemberType = false
 reportUnknownParameterType = false
 reportUnknownVariableType = false
 reportUntypedBaseClass = false
-reportImplicitStringConcatenation = "error"
 reportMissingSuperCall = "error"
 reportPropertyTypeMismatch = "error"
 reportUnnecessaryTypeIgnoreComment = "error"
