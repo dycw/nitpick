@@ -1,7 +1,6 @@
 #### black ####################################################################
 ["pyproject.toml".tool.black]
 line-length = 80
-skip-magic-trailing-comma = true
 
 [[".pre-commit-config.yaml".repos]]
 repo = "https://github.com/psf/black"

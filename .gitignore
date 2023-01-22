@@ -130,3 +130,6 @@ dmypy.json
 
 # direnv
 .direnv/
+
+# ruff
+.ruff_cache/
