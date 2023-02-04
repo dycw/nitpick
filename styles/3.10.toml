@@ -10,14 +10,6 @@ requires-python = ">= 3.10"
 ["pyproject.toml".tool.pyright]
 pythonVersion = "3.10"
 
-#### pyupgrade ################################################################
-[[".pre-commit-config.yaml".repos]]
-repo = "https://github.com/asottile/pyupgrade"
-
-[[".pre-commit-config.yaml".repos.hooks]]
-id = "pyupgrade"
-args = ["--py310-plus"]
-
 #### ruff #####################################################################
 ["pyproject.toml".tool.ruff]
 target-version = "py310"
