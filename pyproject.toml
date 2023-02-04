@@ -115,7 +115,6 @@ extend-ignore = [
   "D105", # pydocstyle, magic-method
   "D107", # pydocstyle, public-init
   "D203", # pydocstyle, pep8
-  "D203", # pydocstyle, pep8
   "D212", # pydocstyle, pep8
   "D213", # pydocstyle, pep8
   "D214", # pydocstyle, pep8
