@@ -11,13 +11,6 @@ id = "black"
 [[".pre-commit-config.yaml".repos.hooks]]
 id = "black-jupyter"
 
-#### bump2version #############################################################
-[[".pre-commit-config.yaml".repos]]
-repo = "https://github.com/dycw/pre-commit-hooks"
-
-[[".pre-commit-config.yaml".repos.hooks]]
-id = "run-bump2version"
-
 #### coverage #################################################################
 ["pyproject.toml".tool.coverage.run]
 branch = true
@@ -36,12 +29,13 @@ directory = ".coverage/html"
 #### files ####################################################################
 [nitpick.files.present]
 "pyproject.toml" = ""
-".bump2version.cfg" = ""
 
 [nitpick.files.absent]
+".bump2version.cfg" = ""
 ".flake8" = ""
 ".isort.cfg" = ""
 "MANIFEST.in" = ""
+"package.json" = ""
 "setup.cfg" = ""
 "setup.py" = ""
 
@@ -52,6 +46,12 @@ build-backend = "hatchling.build"
 
 ["pyproject.toml".tool.hatch.build]
 sources = ["src"]
+
+[[".pre-commit-config.yaml".repos]]
+repo = "https://github.com/dycw/pre-commit-hooks"
+
+[[".pre-commit-config.yaml".repos.hooks]]
+id = "run-hatch-version"
 
 #### nitpick ##################################################################
 [[".pre-commit-config.yaml".repos]]
