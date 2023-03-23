@@ -36,7 +36,7 @@ exceptiongroup==1.1.1
     # via dycw-nitpick (pyproject.toml)
 execnet==1.9.0
     # via pytest-xdist
-filelock==3.10.0
+filelock==3.10.2
     # via virtualenv
 h11==0.14.0
     # via httpcore
@@ -122,7 +122,7 @@ rfc3986[idna2008]==1.5.0
     # via httpx
 rich==13.3.2
     # via hatch
-ruff==0.0.257
+ruff==0.0.258
     # via dycw-nitpick (pyproject.toml)
 secretstorage==3.3.3
     # via keyring

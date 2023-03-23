@@ -155,7 +155,7 @@ xfail_strict = true
 
 #### ruff #####################################################################
 ["pyproject.toml".tool.ruff]
-extend-ignore = [
+ignore = [
   "ANN101", # flake8-annotations, missing-type-self
   "ANN102", # flake8-annotations, missing-type-cls
   "ANN401", # flake8-annotations, dynamically-typed-expression
@@ -194,7 +194,7 @@ extend-ignore = [
   "TRY301", # tryceratops, raise-within-try
 
 ]
-extend-select = ["ALL"]
+select = ["ALL"]
 src = ["src", "tests"]
 target-version = "py39"
 
