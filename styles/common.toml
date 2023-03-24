@@ -180,9 +180,6 @@ target-version = "py39"
 ["pyproject.toml".tool.ruff.flake8-tidy-imports]
 ban-relative-imports = "all"
 
-["pyproject.toml".tool.ruff.isort]
-force-single-line = false
-
 ["pyproject.toml".tool.ruff.per-file-ignores]
 "src/tests/**/*.py" = [
   "FBT001", # flake8-boolean-trap, boolean-positional-arg-in-function-definition
