@@ -53,7 +53,7 @@ dependencies = []
 [project.optional-dependencies]
 dev = [
   "black",
-  "exceptiongroup",
+  "dycw-utilities[test]",
   "hatch",
   "pip-tools",
   "pytest",
