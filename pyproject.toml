@@ -67,17 +67,20 @@ pythonVersion = "3.11"
 executionEnvironments = [{ root = "src" }]
 typeCheckingMode = "strict"
 reportMissingTypeStubs = false
-reportIncompatibleMethodOverride = false
+reportPrivateImportUsage = false
 reportMissingTypeArgument = false
 reportPrivateUsage = false
-reportPrivateImportUsage = false
 reportUnknownArgumentType = false
 reportUnknownMemberType = false
 reportUnknownParameterType = false
 reportUnknownVariableType = false
 reportUntypedBaseClass = false
+reportImplicitOverride = "error"
+reportImportCycles = "error"
 reportMissingSuperCall = "error"
 reportPropertyTypeMismatch = "error"
+reportShadowedImports = "error"
+reportUninitializedInstanceVariable = "error"
 reportUnnecessaryTypeIgnoreComment = "error"
 reportUnusedCallResult = "error"
 
