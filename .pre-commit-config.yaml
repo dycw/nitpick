@@ -9,6 +9,11 @@ repos:
     rev: 0.8.26
     hooks:
       - id: run-hatch-version
+  - repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
+    rev: v2.10.0
+    hooks:
+      - id: pretty-format-toml
+        args: [--autofix, --trailing-commas]
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.4.0
     hooks:
