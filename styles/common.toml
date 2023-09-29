@@ -164,21 +164,58 @@ ignore = [
   "ANN401", # flake8-annotations, dynamically-typed-expression
   "B008", # flake8-bugbear, function-call-argument-default
   "COM812", # flake8-commas, trailing-comma-missing
-  "D", # pydocstyle
-  "PD", # pandas-vet
+  "PGH003", # pygrep-hooks, blanket-type-ignore
   "PLR0913", # refactor, too-many-arguments
   "PT012", # flake8-pytest-style, raises-with-multiple-statements
   "PT013", # flake8-pytest-style, incorrect-pytest-import
-  "TCH001", # flake8-type-checking, typing-only-first-party-import
-  "TCH002", # flake8-type-checking, typing-only-third-party-import
-  "TCH003", # flake8-type-checking, typing-only-standard-library-import
-  "TRY200", # tryceratops, reraise-no-cause
-  "TRY301", # tryceratops, raise-within-try
 
 ]
-select = ["ALL"]
+select = [
+    "A", # flake8-builtins
+    "ANN", # flake8-annotations
+    "ARG", # flake8-unused-arguments
+    "ASYNC", # flake8-async
+    "B", # flake8-bugbear
+    "BLE", # flake8-blind-excpt
+    "C4", # flake8-comprehensions
+    "E,W", # pycodestyle
+    "EM", # flake8-errmsg
+    "ERA", # eradicate
+    "EXE", # flake8-executable
+    "F", # pyflakes
+    "FA", # flake8-future-annotations
+    "FBT", # flake8-boolean-trap
+    "FIX", # flake8-fixme
+    "FLY", # flynt
+    "G", # flake8-logging-format
+    "I", # isort
+    "ICN", # flake8-import-conventions
+    "INP", # flake8-no-pep420
+    "INT", # flake8-gettext
+    "ISC", # flake8-implicit-str-concat
+    "N", # pep8-naming
+    "PGH", # pygrep-hooks
+    "PIE", # flake8-pie
+    "PL", # pylint
+    "PT", # flake8-pytest-style
+    "PTH", # flake8-use-pathlib
+    "PYI", # flake8-pyi
+    "RET", # flake8-return
+    "RSE", # flake8-raise
+    "RUF", # ruff
+    "S", # flake8-bandit
+    "SIM", # flake8-simplify
+    "SLF", # flake8-self
+    "SLOT", # flake8-slots
+    "T10", # flake8-debugger
+    "T20", # flake8-print
+    "TD", # flake8-todos
+    "TID", # flake8-tidy-imports
+    "TRY", # tryceratops
+    "UP", # pyupgrade
+    "YTT", # flake8-2020
+]
 src = ["src", "tests"]
-target-version = "py39"
 
 ["pyproject.toml".tool.ruff.flake8-tidy-imports]
 ban-relative-imports = "all"
