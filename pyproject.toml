@@ -1,7 +1,7 @@
 #### black ####################################################################
 [tool.black]
 skip-magic-trailing-comma = true
-target-version = ["py39"]
+target-version = ["py311"]
 
 #### coverage #################################################################
 [tool.coverage.run]
@@ -36,7 +36,7 @@ path = "src/dycw_nitpick/__init__.py"
 [tool.nitpick]
 style = [
   "styles/common.toml",
-  "styles/3.9.toml",
+  "styles/3.11.toml",
   "styles/pip-compile-no-hashes.toml"
 ]
 cache = "never"
@@ -46,7 +46,7 @@ cache = "never"
 name = "dycw-nitpick"
 dynamic = ["version"]
 readme = "README.md"
-requires-python = ">= 3.9"
+requires-python = ">= 3.11"
 authors = [{ name = "Derek Wan", email = "d.wan@icloud.com" }]
 dependencies = []
 
@@ -56,9 +56,6 @@ dev = [
   "dycw-utilities[test]",
   "hatch",
   "pip-tools",
-  "pytest",
-  "pytest-cov",
-  "pytest-xdist",
   "ruff",
 ]
 
@@ -66,7 +63,7 @@ dev = [
 [tool.pyright]
 include = ["src"]
 exclude = ["**/__pycache__", ".direnv", ".git", ".venv"]
-pythonVersion = "3.9"
+pythonVersion = "3.11"
 executionEnvironments = [{ root = "src" }]
 typeCheckingMode = "strict"
 reportMissingTypeStubs = false
@@ -126,7 +123,7 @@ ignore = [
 ]
 select = ["ALL"]
 src = ["src", "tests"]
-target-version = "py39"
+target-version = "py311"
 
 [tool.ruff.flake8-tidy-imports]
 ban-relative-imports = "all"
