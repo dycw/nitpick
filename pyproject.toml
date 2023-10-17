@@ -177,7 +177,7 @@ select = [
   "LOG",  # flake8-logging
   "RUF",  # ruff
 ]
-src = ["src", "tests"]
+src = ["src"]
 target-version = "py311"
 
 [tool.ruff.flake8-tidy-imports]
