@@ -248,7 +248,7 @@ select = [
   "LOG",  # flake8-logging
   "RUF",  # ruff
 ]
-src = ["src", "tests"]
+src = ["src"]
 
 ["pyproject.toml".tool.ruff.flake8-tidy-imports]
 ban-relative-imports = "all"
