@@ -1,15 +1,6 @@
 #
 
 # pre-commit
-[[".pre-commit-config.yaml".repos]]  # black
-repo = "https://github.com/psf/black"
-
-[[".pre-commit-config.yaml".repos.hooks]]
-id = "black"
-
-[[".pre-commit-config.yaml".repos.hooks]]
-id = "black-jupyter"
-
 [[".pre-commit-config.yaml".repos]]  # dycw
 repo = "https://github.com/dycw/pre-commit-hooks"
 
@@ -86,6 +77,9 @@ repo = "https://github.com/charliermarsh/ruff-pre-commit"
 args = ["--fix"]
 id = "ruff"
 
+[[".pre-commit-config.yaml".repos.hooks]]
+id = "ruff-format"
+
 [[".pre-commit-config.yaml".repos]]  # shellcheck
 repo = "https://github.com/shellcheck-py/shellcheck-py"
 
@@ -114,11 +108,6 @@ requires = ["hatchling"]
 ["pyproject.toml".project]
 dynamic = ["version"]
 readme = "README.md"
-
-# black
-["pyproject.toml".tool.black]
-line-length = 80
-skip-magic-trailing-comma = true
 
 # coverage
 ["pyproject.toml".tool.coverage]
@@ -196,6 +185,10 @@ ignore = [
   "PLR0913",  # refactor, too-many-arguments
   "PT012",  # flake8-pytest-style, raises-with-multiple-statements
   "PT013",  # flake8-pytest-style, incorrect-pytest-import
+  # formatter
+  "ISC001",  # flake8-implicit-str-concat, single-line-implicit-string-concatenation
+  "E501",  # pycodestyle, line-too-long
+  "W191",  # pycodestyle, tab-indentation
 ]
 select = [
   "F",  # pyflakes
