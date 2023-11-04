@@ -60,16 +60,6 @@ repo = "https://github.com/macisamuele/language-formatters-pre-commit-hooks"
 args = ["--autofix", "--trailing-commas"]
 id = "pretty-format-toml"
 
-[[".pre-commit-config.yaml".repos]]  # local: pyright
-repo = "local"
-
-[[".pre-commit-config.yaml".repos.hooks]]
-entry = "pyright"
-id = "pyright"
-language = "system"
-name = "pyright"
-types = ["python"]
-
 [[".pre-commit-config.yaml".repos]]  # ruff
 repo = "https://github.com/charliermarsh/ruff-pre-commit"
 
