@@ -98,9 +98,6 @@ typeCheckingMode = "strict"
 addopts = [
   "-rsxX",
   "--color=auto",
-  "--cov=dycw_nitpick",
-  "--cov-config=pyproject.toml",
-  "--cov-report=html",
   "--strict-markers",
   "--tb=native",
 ]
