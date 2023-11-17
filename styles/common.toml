@@ -231,13 +231,16 @@ select = [
 ]
 src = ["src"]
 
-["pyproject.toml".tool.ruff.flake8-tidy-imports]
-ban-relative-imports = "all"
-
-["pyproject.toml".tool.ruff.per-file-ignores]
+["pyproject.toml".tool.ruff.extend-per-file-ignores]
 "src/tests/**/*.py" = [
   "FBT001",  # flake8-boolean-trap, boolean-positional-arg-in-function-definition
   "FBT003",  # flake8-boolean-trap, boolean-positional-value-in-function-call
   "PLR2004",  # refactor, magic-value-comparison
   "S101",  # flake8-bandit, assert-used
 ]
+
+["pyproject.toml".tool.ruff.format]
+skip-magic-trailing-comma = true
+
+["pyproject.toml".tool.ruff.lint.flake8-tidy-imports]
+ban-relative-imports = "all"
