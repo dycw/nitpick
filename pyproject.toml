@@ -174,9 +174,6 @@ select = [
 src = ["src"]
 target-version = "py311"
 
-[tool.ruff.format]
-skip-magic-trailing-comma = true
-
 [tool.ruff.lint.extend-per-file-ignores]
 "src/tests/**/*.py" = [
   "FBT001",  # flake8-boolean-trap, boolean-positional-arg-in-function-definition
