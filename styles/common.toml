@@ -7,6 +7,9 @@ repo = "https://github.com/dycw/pre-commit-hooks"
 [[".pre-commit-config.yaml".repos.hooks]]
 id = "run-hatch-version"
 
+[[".pre-commit-config.yaml".repos.hooks]]
+id = "run-ruff-format"
+
 [[".pre-commit-config.yaml".repos]]  # nitpick
 repo = "https://github.com/andreoliwa/nitpick"
 
@@ -66,9 +69,6 @@ repo = "https://github.com/charliermarsh/ruff-pre-commit"
 [[".pre-commit-config.yaml".repos.hooks]]
 args = ["--fix"]
 id = "ruff"
-
-[[".pre-commit-config.yaml".repos.hooks]]
-id = "ruff-format"
 
 [[".pre-commit-config.yaml".repos]]  # shellcheck
 repo = "https://github.com/shellcheck-py/shellcheck-py"
@@ -241,3 +241,6 @@ src = ["src"]
 
 ["pyproject.toml".tool.ruff.lint.flake8-tidy-imports]
 ban-relative-imports = "all"
+
+["pyproject.toml".tool.ruff.lint.isort]
+required-imports = ["from __future__ import annotations"]
