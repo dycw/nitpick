@@ -10,7 +10,7 @@ atomicwrites==1.4.1
     # via dycw-utilities
 build==1.0.3
     # via pip-tools
-certifi==2023.7.22
+certifi==2023.11.17
     # via
     #   httpcore
     #   httpx
@@ -23,7 +23,7 @@ click==8.1.7
     #   userpath
 distlib==0.3.7
     # via virtualenv
-dycw-utilities[hatch,test]==0.18.12
+dycw-utilities[hatch,test]==0.18.14
     # via dycw-nitpick (pyproject.toml)
 editables==0.5
     # via hatchling

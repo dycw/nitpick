@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from dycw_nitpick import __version__
 
 
