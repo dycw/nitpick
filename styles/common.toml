@@ -154,7 +154,6 @@ addopts = [
   "-rsxX",
   "--color=auto",
   "--strict-markers",
-  "--tb=native",
 ]
 filterwarnings = ["error"]
 minversion = "7.0"
