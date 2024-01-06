@@ -30,12 +30,10 @@ click==8.1.7
     #   userpath
 distlib==0.3.8
     # via virtualenv
-dycw-utilities[hatch,test]==0.23.3
+dycw-utilities[hatch,test]==0.23.8
     # via dycw-nitpick (pyproject.toml)
 editables==0.5
     # via hatchling
-exceptiongroup==1.2.0
-    # via dycw-utilities
 execnet==2.0.2
     # via pytest-xdist
 filelock==3.13.1
@@ -120,8 +118,6 @@ pytest==7.4.4
     #   pytest-randomly
     #   pytest-xdist
 pytest-instafail==0.5.0
-    # via dycw-utilities
-pytest-is-running==1.5.1
     # via dycw-utilities
 pytest-randomly==3.15.0
     # via dycw-utilities
