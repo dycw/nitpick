@@ -1,3 +1,6 @@
+default_language_version:
+  python: python3.11
+
 repos:
   # fixers
   - repo: https://github.com/charliermarsh/ruff-pre-commit
@@ -6,7 +9,7 @@ repos:
       - id: ruff
         args: [--fix]
   - repo: https://github.com/dycw/pre-commit-hooks
-    rev: 0.8.34
+    rev: 0.8.37
     hooks:
       - id: run-hatch-version
       - id: run-ruff-format
