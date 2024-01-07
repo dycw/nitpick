@@ -30,7 +30,7 @@ click==8.1.7
     #   userpath
 distlib==0.3.8
     # via virtualenv
-dycw-utilities[hatch,test]==0.23.8
+dycw-utilities[hatch,test]==0.23.9
     # via dycw-nitpick (pyproject.toml)
 editables==0.5
     # via hatchling
