@@ -30,10 +30,12 @@ click==8.1.7
     #   userpath
 distlib==0.3.8
     # via virtualenv
-dycw-utilities[hatch,test]==0.23.9
+dycw-utilities[hatch,test]==0.24.3
     # via dycw-nitpick (pyproject.toml)
 editables==0.5
     # via hatchling
+exceptiongroup==1.2.0
+    # via dycw-utilities
 execnet==2.0.2
     # via pytest-xdist
 filelock==3.13.1
@@ -73,7 +75,7 @@ markdown-it-py==3.0.0
     # via rich
 mdurl==0.1.2
     # via markdown-it-py
-more-itertools==10.1.0
+more-itertools==10.2.0
     # via
     #   dycw-utilities
     #   jaraco-classes
@@ -141,7 +143,7 @@ tomlkit==0.12.3
     # via hatch
 tqdm==4.66.1
     # via dycw-utilities
-trove-classifiers==2023.11.29
+trove-classifiers==2024.1.8
     # via hatchling
 typed-settings==23.1.1
     # via dycw-utilities
