@@ -85,11 +85,7 @@ typeCheckingMode = "strict"
 
 [tool.pytest.ini_options]
 addopts = ["-rsxX", "--color=auto", "--strict-markers"]
-filterwarnings = [
-  "error",
-  "ignore::DeprecationWarning",
-  "ignore:Implicitly cleaning up <TemporaryDirectory '.*'>:ResourceWarning",
-]
+filterwarnings = ["error"]
 minversion = "8.0"
 testpaths = ["src/tests"]
 xfail_strict = true
