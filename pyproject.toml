@@ -92,6 +92,10 @@ xfail_strict = true
 
 # ruff
 [tool.ruff]
+src = ["src"]
+target-version = "py311"
+
+[tool.ruff.lint]
 ignore = [
   "ANN101",  # flake8-annotations, missing-type-self
   "ANN102",  # flake8-annotations, missing-type-cls
@@ -160,8 +164,6 @@ select = [
   "W",  # pycodestyle
   "YTT",  # flake8-2020
 ]
-src = ["src"]
-target-version = "py311"
 
 [tool.ruff.lint.extend-per-file-ignores]
 "src/tests/**/*.py" = [
