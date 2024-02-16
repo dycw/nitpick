@@ -1,5 +1,13 @@
 #
 
+# pre-commit
+[[".pre-commit-config.yaml".repos]]  # dycw
+repo = "https://github.com/dycw/pre-commit-hooks"
+
+[[".pre-commit-config.yaml".repos.hooks]]
+args = ["--python-version=3.10"]
+id = "run-uv-pip-compile"
+
 # project
 ["pyproject.toml".project]
 requires-python = ">= 3.10"
