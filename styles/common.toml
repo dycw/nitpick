@@ -150,7 +150,7 @@ typeCheckingMode = "strict"
 ["pyproject.toml".tool.pytest]
 
 ["pyproject.toml".tool.pytest.ini_options]
-addopts = ["-rsxX", "--color=auto", "--strict-markers"]
+addopts = ["-ra", "-vv", "--color=auto", "--strict-markers"]
 filterwarnings = ["error"]
 minversion = "8.0"
 testpaths = ["src/tests"]
