@@ -106,7 +106,7 @@ readme = "README.md"
 directory = ".coverage/html"
 
 ["pyproject.toml".tool.coverage.report]
-exclude_lines = ["# pragma: no cover", "@overload"]
+exclude_also = ["@overload", "if TYPE_CHECKING:"]
 fail_under = 100.0
 skip_covered = true
 skip_empty = true
