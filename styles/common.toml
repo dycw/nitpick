@@ -162,7 +162,6 @@ src = ["src"]
 
 ["pyproject.toml".tool.ruff.lint]
 ignore = [
-  "ANN101",  # flake8-annotations, missing-type-self
   "ANN102",  # flake8-annotations, missing-type-cls
   "ANN401",  # flake8-annotations, dynamically-typed-expression
   "B008",  # flake8-bugbear, function-call-argument-default

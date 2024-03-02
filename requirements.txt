@@ -16,7 +16,7 @@ click==8.1.7
     #   userpath
 distlib==0.3.8
     # via virtualenv
-dycw-utilities==0.25.1
+dycw-utilities==0.26.4
 editables==0.5
     # via hatchling
 exceptiongroup==1.2.0
@@ -66,6 +66,7 @@ packaging==23.2
     #   hatch
     #   hatchling
     #   pytest
+    #   pytest-rerunfailures
 pathspec==0.12.1
     # via hatchling
 pexpect==4.9.0
@@ -87,8 +88,11 @@ pytest==8.0.2
     # via
     #   dycw-utilities
     #   pytest-randomly
+    #   pytest-rerunfailures
     #   pytest-xdist
 pytest-randomly==3.15.0
+    # via dycw-utilities
+pytest-rerunfailures==13.0
     # via dycw-utilities
 pytest-xdist==3.5.0
     # via dycw-utilities
