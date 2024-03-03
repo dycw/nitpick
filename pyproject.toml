@@ -147,6 +147,7 @@ select = [
   "SLOT",  # flake8-slots
   "T10",  # flake8-debugger
   "T20",  # flake8-print
+  "TCH",  # flake8-type-checking
   "TD",  # flake8-todos
   "TID",  # flake8-tidy-imports
   "TRY",  # tryceratops
@@ -165,6 +166,3 @@ select = [
 
 [tool.ruff.lint.flake8-tidy-imports]
 ban-relative-imports = "all"
-
-[tool.ruff.lint.isort]
-required-imports = ["from __future__ import annotations"]
