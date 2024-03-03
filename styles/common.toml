@@ -159,6 +159,7 @@ xfail_strict = true
 # ruff
 ["pyproject.toml".tool.ruff]
 src = ["src"]
+unsafe-fixes = true
 
 ["pyproject.toml".tool.ruff.lint]
 ignore = [
