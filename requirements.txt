@@ -16,7 +16,7 @@ click==8.1.7
     #   userpath
 distlib==0.3.8
     # via virtualenv
-dycw-utilities==0.26.5
+dycw-utilities==0.26.6
 editables==0.5
     # via hatchling
 exceptiongroup==1.2.0

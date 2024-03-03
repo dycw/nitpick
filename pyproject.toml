@@ -90,6 +90,7 @@ xfail_strict = true
 [tool.ruff]
 src = ["src"]
 target-version = "py311"
+unsafe-fixes = true
 
 [tool.ruff.lint]
 ignore = [
@@ -166,3 +167,6 @@ select = [
 
 [tool.ruff.lint.flake8-tidy-imports]
 ban-relative-imports = "all"
+
+[tool.ruff.lint.isort]
+required-imports = ["from __future__ import annotations"]
