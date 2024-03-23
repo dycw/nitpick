@@ -124,7 +124,6 @@ sources = ["src"]
 
 # pyright
 ["pyproject.toml".tool.pyright]
-exclude = ["**/__pycache__", ".direnv", ".git"]
 executionEnvironments = [{root = "src"}]
 include = ["src"]
 reportImplicitOverride = "error"
