@@ -16,7 +16,7 @@ click==8.1.7
     #   userpath
 distlib==0.3.8
     # via virtualenv
-dycw-utilities==0.26.6
+dycw-utilities==0.26.22
 editables==0.5
     # via hatchling
 exceptiongroup==1.2.0
@@ -27,7 +27,7 @@ filelock==3.13.1
     # via virtualenv
 h11==0.14.0
     # via httpcore
-hatch==1.9.3
+hatch==1.9.4
 hatchling==1.21.1
     # via hatch
 httpcore==1.0.4
@@ -36,7 +36,7 @@ httpx==0.27.0
     # via hatch
 hyperlink==21.0.0
     # via hatch
-hypothesis==6.98.15
+hypothesis==6.99.11
     # via dycw-utilities
 identify==2.5.35
     # via pre-commit
@@ -45,7 +45,7 @@ idna==3.6
     #   anyio
     #   httpx
     #   hyperlink
-importlib-metadata==7.0.1
+importlib-metadata==7.1.0
     # via keyring
 iniconfig==2.0.0
     # via pytest
@@ -61,7 +61,7 @@ more-itertools==10.2.0
     # via jaraco-classes
 nodeenv==1.8.0
     # via pre-commit
-packaging==23.2
+packaging==24.0
     # via
     #   hatch
     #   hatchling
@@ -84,7 +84,7 @@ ptyprocess==0.7.0
     # via pexpect
 pygments==2.17.2
     # via rich
-pytest==8.0.2
+pytest==8.1.1
     # via
     #   dycw-utilities
     #   pytest-randomly
@@ -92,7 +92,7 @@ pytest==8.0.2
     #   pytest-xdist
 pytest-randomly==3.15.0
     # via dycw-utilities
-pytest-rerunfailures==13.0
+pytest-rerunfailures==14.0
     # via dycw-utilities
 pytest-xdist==3.5.0
     # via dycw-utilities
@@ -100,7 +100,7 @@ pyyaml==6.0.1
     # via pre-commit
 rich==13.7.1
     # via hatch
-setuptools==69.1.1
+setuptools==69.2.0
     # via nodeenv
 shellingham==1.5.4
     # via hatch
@@ -114,7 +114,7 @@ tomli-w==1.0.0
     # via hatch
 tomlkit==0.12.4
     # via hatch
-trove-classifiers==2024.2.23
+trove-classifiers==2024.3.3
     # via hatchling
 typing-extensions==4.10.0
     # via dycw-utilities
@@ -124,7 +124,7 @@ virtualenv==20.25.1
     # via
     #   hatch
     #   pre-commit
-zipp==3.17.0
+zipp==3.18.1
     # via importlib-metadata
 zstandard==0.22.0
     # via hatch
