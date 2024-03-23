@@ -11,7 +11,7 @@ dependencies = []
 dynamic = ["version"]
 name = "dycw-nitpick"
 readme = "README.md"
-requires-python = ">= 3.11"
+requires-python = ">= 3.12"
 
 [project.optional-dependencies]
 dev = ["dycw-utilities[test]", "hatch", "pre-commit"]
@@ -48,13 +48,13 @@ path = "src/dycw_nitpick/__init__.py"
 # nitpick
 [tool.nitpick]
 cache = "never"
-style = ["styles/3.11.toml", "styles/common.toml"]
+style = ["styles/3.12.toml", "styles/common.toml"]
 
 # pyright
 [tool.pyright]
 executionEnvironments = [{root = "src"}]
 include = ["src"]
-pythonVersion = "3.11"
+pythonVersion = "3.12"
 reportImplicitOverride = "error"
 reportImportCycles = "error"
 reportMissingSuperCall = "error"
@@ -87,7 +87,7 @@ xfail_strict = true
 # ruff
 [tool.ruff]
 src = ["src"]
-target-version = "py311"
+target-version = "py312"
 unsafe-fixes = true
 
 [tool.ruff.lint]
