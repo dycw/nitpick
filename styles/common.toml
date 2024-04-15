@@ -166,6 +166,7 @@ ignore = [
   "ANN102",  # missing-type-cls
   "ANN401",  # dynamically-typed-expression
   "D",  # pydocstyle
+  "PT013",  # pytest-incorrect-pytest-import
   # formatter
   "W191",  # tab-indentation
   "E111",  # indentation-with-invalid-multiple
