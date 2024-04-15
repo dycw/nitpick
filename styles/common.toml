@@ -185,6 +185,9 @@ ignore = [
 select = ["ALL"]
 
 ["pyproject.toml".tool.ruff.lint.extend-per-file-ignores]
+"*.ipynb" = [
+  "PLE1142",  # await-outside-async
+]
 "src/tests/**/*.py" = [
   "FBT001",  # boolean-positional-arg-in-function-definition
   "FBT003",  # boolean-positional-value-in-function-call
