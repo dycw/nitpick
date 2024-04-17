@@ -187,9 +187,11 @@ select = ["ALL"]
 
 ["pyproject.toml".tool.ruff.lint.extend-per-file-ignores]
 "*.ipynb" = [
+  "B018",  # useless-expression
   "F403",  # undefined-local-with-import-star
   "F405",  # undefined-local-with-import-star-usage
   "PLE1142",  # await-outside-async
+  "S101",  # assert-used
 ]
 "src/tests/**/*.py" = [
   "FBT001",  # boolean-positional-arg-in-function-definition
