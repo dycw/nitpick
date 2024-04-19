@@ -132,6 +132,7 @@ select = ["ALL"]
 
 [tool.ruff.lint.extend-per-file-ignores]
 "*.ipynb" = [
+  "PD",  # pandas-vet
   "B018",  # useless-expression
   "F403",  # undefined-local-with-import-star
   "F405",  # undefined-local-with-import-star-usage
