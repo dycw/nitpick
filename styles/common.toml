@@ -205,9 +205,6 @@ select = ["ALL"]
   "S101",  # assert-used
 ]
 "src/tests/**/*.py" = [
-  "FBT001",  # boolean-positional-arg-in-function-definition
-  "FBT003",  # boolean-positional-value-in-function-call
-  "PLR2004",  # magic-value-comparison
   "S101",  # assert-used
 ]
 
