@@ -199,6 +199,7 @@ select = ["ALL"]
 ["pyproject.toml".tool.ruff.lint.extend-per-file-ignores]
 "*.ipynb" = [
   "B018",  # useless-expression
+  "PD",  # pandas-vet
   "F403",  # undefined-local-with-import-star
   "F405",  # undefined-local-with-import-star-usage
   "PLE1142",  # await-outside-async
