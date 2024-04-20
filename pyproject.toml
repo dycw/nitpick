@@ -86,13 +86,10 @@ xfail_strict = true
 
 # ruff
 [tool.ruff]
-line-length = 320
+extend-exclude = ["**/*.ipynb"]
 src = ["src"]
 target-version = "py312"
 unsafe-fixes = true
-
-[tool.ruff.format]
-skip-magic-trailing-comma = true
 
 [tool.ruff.lint]
 ignore = [
@@ -131,14 +128,6 @@ ignore = [
 select = ["ALL"]
 
 [tool.ruff.lint.extend-per-file-ignores]
-"*.ipynb" = [
-  "PD",  # pandas-vet
-  "B018",  # useless-expression
-  "F403",  # undefined-local-with-import-star
-  "F405",  # undefined-local-with-import-star-usage
-  "PLE1142",  # await-outside-async
-  "S101",  # assert-used
-]
 "src/tests/**/*.py" = [
   "S101",  # assert-used
 ]
@@ -148,4 +137,3 @@ ban-relative-imports = "all"
 
 [tool.ruff.lint.isort]
 required-imports = ["from __future__ import annotations"]
-split-on-trailing-comma = false
