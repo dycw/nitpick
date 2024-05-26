@@ -14,7 +14,7 @@ readme = "README.md"
 requires-python = ">= 3.12"
 
 [project.optional-dependencies]
-dev = ["dycw-utilities[test]", "hatch", "pre-commit"]
+dev = ["dycw-utilities[test]", "hatch"]
 
 # coverage
 [tool.coverage]
@@ -125,7 +125,6 @@ ignore = [
   "ISC001",  # single-line-implicit-string-concatenation
   "ISC002",  # multi-line-implicit-string-concatenation
 ]
-ignore-init-module-imports = false
 select = ["ALL"]
 
 [tool.ruff.lint.extend-per-file-ignores]
