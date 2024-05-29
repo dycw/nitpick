@@ -130,8 +130,6 @@ sources = ["src"]
 
 # isort
 ["pyproject.toml".tool.isort]
-
-["pyproject.toml".tool.isort.build]
 float_to_top = true
 
 # pyright
