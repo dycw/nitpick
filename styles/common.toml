@@ -10,6 +10,12 @@ id = "run-hatch-version"
 [[".pre-commit-config.yaml".repos.hooks]]
 id = "run-ruff-format"
 
+[[".pre-commit-config.yaml".repos]]  # isort
+repo = "https://github.com/pycqa/isort"
+
+[[".pre-commit-config.yaml".repos.hooks]]
+id = "isort"
+
 [[".pre-commit-config.yaml".repos]]  # nitpick
 repo = "https://github.com/andreoliwa/nitpick"
 
