@@ -128,6 +128,12 @@ parallel = true
 ["pyproject.toml".tool.hatch.build]
 sources = ["src"]
 
+# isort
+["pyproject.toml".tool.isort]
+
+["pyproject.toml".tool.isort.build]
+float_to_top = true
+
 # pyright
 ["pyproject.toml".tool.pyright]
 executionEnvironments = [{root = "src"}]
