@@ -162,6 +162,7 @@ src = ["src"]
 unsafe-fixes = true
 
 ["pyproject.toml".tool.ruff.lint]
+fixable = ["ALL"]
 ignore = [
   "ANN101",  # missing-type-self
   "ANN102",  # missing-type-cls
@@ -196,6 +197,9 @@ ignore = [
   "ISC002",  # multi-line-implicit-string-concatenation
 ]
 select = ["ALL"]
+unfixable = [
+  "B007",  # unused-loop-control-variable
+]
 
 ["pyproject.toml".tool.ruff.lint.extend-per-file-ignores]
 "src/tests/**/*.py" = [
