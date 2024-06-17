@@ -200,6 +200,8 @@ ignore = [
 select = ["ALL"]
 unfixable = [
   "B007",  # unused-loop-control-variable
+  "PLR5501",  # collapsible-else-if
+  "SIM114",  # if-with-same-arms
 ]
 
 ["pyproject.toml".tool.ruff.lint.extend-per-file-ignores]
