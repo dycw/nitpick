@@ -78,12 +78,7 @@ typeCheckingMode = "strict"
 [tool.pytest]
 
 [tool.pytest.ini_options]
-addopts = [
-  "-ra",
-  "-vv",
-  "--color=auto",
-  "--strict-markers",
-]
+addopts = ["-ra", "-vv", "--color=auto", "--strict-markers"]
 filterwarnings = ["error"]
 minversion = "8.0"
 testpaths = ["src/tests"]
