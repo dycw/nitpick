@@ -14,7 +14,7 @@ readme = "README.md"
 requires-python = ">= 3.12"
 
 [project.optional-dependencies]
-dev = ["dycw-utilities[test]", "hatch", "ipython", "readline"]
+dev = ["dycw-utilities[test]", "hatch"]
 
 # coverage
 [tool.coverage]
