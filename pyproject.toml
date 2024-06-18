@@ -14,7 +14,7 @@ readme = "README.md"
 requires-python = ">= 3.12"
 
 [project.optional-dependencies]
-dev = ["dycw-utilities[test]", "hatch"]
+dev = ["dycw-utilities[test]", "hatch", "ipython", "readline"]
 
 # coverage
 [tool.coverage]
@@ -78,7 +78,13 @@ typeCheckingMode = "strict"
 [tool.pytest]
 
 [tool.pytest.ini_options]
-addopts = ["-ra", "-vv", "--color=auto", "--strict-markers"]
+addopts = [
+  "-ra",
+  "-vv",
+  "--color=auto",
+  "--pdbcls=IPython.terminal.debugger:Pdb",
+  "--strict-markers",
+]
 filterwarnings = ["error"]
 minversion = "8.0"
 testpaths = ["src/tests"]
