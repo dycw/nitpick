@@ -143,6 +143,7 @@ unfixable = [
   "PLR5501",  # collapsible-else-if
   "RET504",  # unnecessary-assign
   "SIM102",  # collapsible-if
+  "SIM105",  # suppressible-exception
   "SIM114",  # if-with-same-arms
   "T201",  # print
 ]
