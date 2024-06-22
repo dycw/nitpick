@@ -14,7 +14,7 @@ click==8.1.7
     #   userpath
 distlib==0.3.8
     # via virtualenv
-dycw-utilities==0.29.0
+dycw-utilities==0.29.4
     # via dycw-nitpick (pyproject.toml)
 exceptiongroup==1.2.1
     # via dycw-utilities
