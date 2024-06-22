@@ -223,6 +223,7 @@ unfixable = [
   "RET504",  # unnecessary-assign
   "SIM102",  # collapsible-if
   "SIM114",  # if-with-same-arms
+  "T201",  # print
 ]
 
 ["pyproject.toml".tool.ruff.lint.extend-per-file-ignores]
