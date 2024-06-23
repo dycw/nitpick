@@ -141,6 +141,7 @@ unfixable = [
   "F541",  # f-string-missing-placeholders
   "F601",  # multi-value-repeated-key-literal
   "PIE794",  # duplicate-class-field-definition
+  "PT014",  # pytest-duplicate-parametrize-test-cases
   "PLR5501",  # collapsible-else-if
   "RET504",  # unnecessary-assign
   "SIM102",  # collapsible-if
