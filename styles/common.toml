@@ -179,7 +179,6 @@ ignore = [
   "ANN102",  # missing-type-cls
   "ANN401",  # any-type
   "C901",  # complex-structure
-  "CPY001",  # missing-copyright-notice
   "D100",  # undocumented-public-module
   "D101",  # undocumented-public-class
   "D102",  # undocumented-public-method
