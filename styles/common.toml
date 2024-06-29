@@ -169,6 +169,9 @@ xfail_strict = true
 src = ["src"]
 unsafe-fixes = true
 
+["pyproject.toml".tool.ruff.format]
+preview = true
+
 ["pyproject.toml".tool.ruff.lint]
 fixable = ["ALL"]
 ignore = [
