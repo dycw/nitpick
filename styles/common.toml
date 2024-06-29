@@ -169,6 +169,9 @@ xfail_strict = true
 src = ["src"]
 unsafe-fixes = true
 
+["pyproject.toml".tool.ruff.format]
+preview = true
+
 ["pyproject.toml".tool.ruff.lint]
 fixable = ["ALL"]
 ignore = [
@@ -189,13 +192,10 @@ ignore = [
   "D213",  # multi-line-summary-second-line
   "E501",  # line-too-long
   "PD901",  # pandas-df-variable-name
-  "PLR0904",  # too-many-public-methods
   "PLR0911",  # too-many-return-statements
   "PLR0912",  # too-many-branches
   "PLR0913",  # too-many-arguments
-  "PLR0914",  # too-many-variables
   "PLR0915",  # too-many-statements
-  "PLR0916",  # too-many-boolean-expressions
   "PLR2004",  # magic-value-comparison
   "PT013",  # pytest-incorrect-pytest-import
   "S603",  # subprocess-without-shell-equals-true
