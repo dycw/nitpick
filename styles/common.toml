@@ -175,6 +175,7 @@ ignore = [
   "ANN101",  # missing-type-self
   "ANN102",  # missing-type-cls
   "ANN401",  # dynamically-typed-expression
+  "CPY001",  # missing-copyright-notice
   "D100",  # undocumented-public-module
   "D101",  # undocumented-public-class
   "D102",  # undocumented-public-method
@@ -195,7 +196,6 @@ ignore = [
   "PLR0915",  # too-many-statements
   "PLR2004",  # magic-value-comparison
   "PT013",  # pytest-incorrect-pytest-import
-  "S101",  # assert-used
   "S603",  # subprocess-without-shell-equals-true
   "S607",  # start-process-with-partial-path
   # formatter
@@ -231,8 +231,13 @@ unfixable = [
 
 ["pyproject.toml".tool.ruff.lint.extend-per-file-ignores]
 "src/tests/**/*.py" = [
+  "PLC2701",  # import-private-name
+  "PLR6301",  # no-self-use
   "S101",  # assert-used
 ]
 
 ["pyproject.toml".tool.ruff.lint.flake8-tidy-imports]
 ban-relative-imports = "all"
+
+["pyproject.toml".tool.ruff.lint.isort]
+required-imports = ["from __future__ import annotations"]
