@@ -169,12 +169,11 @@ xfail_strict = true
 src = ["src"]
 unsafe-fixes = true
 
-["pyproject.toml".tool.ruff.format]
-preview = true
-
 ["pyproject.toml".tool.ruff.lint]
 fixable = ["ALL"]
 ignore = [
+  "ANN101",  # missing-type-self
+  "ANN102",  # missing-type-cls
   "ANN401",  # any-type
   "C901",  # complex-structure
   "CPY001",  # missing-copyright-notice
@@ -190,7 +189,6 @@ ignore = [
   "D213",  # multi-line-summary-second-line
   "E501",  # line-too-long
   "PD901",  # pandas-df-variable-name
-  "PLC2701",  # import-private-name (preview)
   "PLR0904",  # too-many-public-methods
   "PLR0911",  # too-many-return-statements
   "PLR0912",  # too-many-branches
@@ -199,10 +197,7 @@ ignore = [
   "PLR0915",  # too-many-statements
   "PLR0916",  # too-many-boolean-expressions
   "PLR2004",  # magic-value-comparison
-  "PLR6301",  # no-self-use (preview)
   "PT013",  # pytest-incorrect-pytest-import
-  "S403",  # suspicious-pickle-import (preview)
-  "S404",  # suspicious-subprocess-import (preview)
   "S603",  # subprocess-without-shell-equals-true
   "S607",  # start-process-with-partial-path
   # formatter
@@ -221,7 +216,6 @@ ignore = [
   "ISC001",  # single-line-implicit-string-concatenation
   "ISC002",  # multi-line-implicit-string-concatenation
 ]
-preview = true
 select = ["ALL"]
 unfixable = [
   "B007",  # unused-loop-control-variable
