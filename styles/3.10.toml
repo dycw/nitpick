@@ -1,6 +1,7 @@
-# pre-commit
+#
 
-[[".pre-commit-config.yaml".repos]]  # dycw
+# pre-commit
+[[".pre-commit-config.yaml".repos]]
 repo = "https://github.com/dycw/pre-commit-hooks"
 
 [[".pre-commit-config.yaml".repos.hooks]]
@@ -11,8 +12,8 @@ id = "run-uv-pip-compile"
 ["pyproject.toml".project]
 requires-python = ">= 3.10"
 
-# pyright
-["pyproject.toml".tool.pyright]
+# basedpyright
+["pyproject.toml".tool.basedpyright]
 pythonVersion = "3.10"
 
 # ruff
