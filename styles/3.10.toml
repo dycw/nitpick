@@ -1,5 +1,6 @@
 #
 
+# pre-commit
 [[".pre-commit-config.yaml".repos]]
 repo = "https://github.com/dycw/pre-commit-hooks"
 
