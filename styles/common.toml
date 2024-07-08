@@ -105,7 +105,6 @@ readme = "README.md"
 
 # basedpyright
 ["pyproject.toml".tool.basedpyright]
-pythonVersion = "3.10"
 reportAny = false
 reportMissingTypeArgument = false
 reportMissingTypeStubs = false
