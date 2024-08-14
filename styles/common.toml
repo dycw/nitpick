@@ -26,9 +26,6 @@ id = "check-executables-have-shebangs"
 id = "check-merge-conflict"
 
 [[".pre-commit-config.yaml".repos.hooks]]
-id = "check-shebang-scripts-are-executable"
-
-[[".pre-commit-config.yaml".repos.hooks]]
 id = "check-symlinks"
 
 [[".pre-commit-config.yaml".repos.hooks]]
