@@ -63,6 +63,12 @@ repo = "https://github.com/macisamuele/language-formatters-pre-commit-hooks"
 args = ["--autofix", "--trailing-commas"]
 id = "pretty-format-toml"
 
+[[".pre-commit-config.yaml".repos]]  # xml-formatter
+repo = "https://github.com/pamoller/xmlformatter"
+
+[[".pre-commit-config.yaml".repos.hooks]]
+id = "xml-formatter"
+
 [[".pre-commit-config.yaml".repos]]  # ruff
 repo = "https://github.com/astral-sh/ruff-pre-commit"
 
