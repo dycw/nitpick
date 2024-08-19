@@ -75,7 +75,6 @@ id = "ruff"
 
 [[".pre-commit-config.yaml".repos.hooks]]
 id = "ruff-format"
-types_or = ["python", "pyi", "jupyter"]
 
 [[".pre-commit-config.yaml".repos]]  # shellcheck
 repo = "https://github.com/shellcheck-py/shellcheck-py"
