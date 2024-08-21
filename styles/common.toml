@@ -218,6 +218,3 @@ select = ["ALL"]
 
 ["pyproject.toml".tool.ruff.lint.flake8-tidy-imports]
 ban-relative-imports = "all"
-
-["pyproject.toml".tool.ruff.lint.isort]
-required-imports = ["from __future__ import annotations"]
