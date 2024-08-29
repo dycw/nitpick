@@ -105,19 +105,6 @@ requires = ["hatchling"]
 dynamic = ["version"]
 readme = "README.md"
 
-# basedpyright
-["pyproject.toml".tool.basedpyright]
-reportAny = false
-reportMissingTypeArgument = false
-reportMissingTypeStubs = false
-reportPrivateUsage = false
-reportUnknownArgumentType = false
-reportUnknownMemberType = false
-reportUnknownParameterType = false
-reportUnknownVariableType = false
-reportUnusedImport = false
-reportUnusedVariable = false
-
 # coverage
 ["pyproject.toml".tool.coverage]
 
@@ -140,6 +127,32 @@ parallel = true
 
 ["pyproject.toml".tool.hatch.build]
 sources = ["src"]
+
+# pyright
+["pyproject.toml".tool.pyright]
+deprecateTypingAliases = true
+enableReachabilityAnalysis = false
+reportAny = false
+reportCallInDefaultInitializer = true
+reportImplicitOverride = true
+reportImplicitStringConcatenation = true
+reportImportCycles = true
+reportMissingSuperCall = true
+reportMissingTypeArgument = false
+reportMissingTypeStubs = false
+reportPrivateUsage = false
+reportPropertyTypeMismatch = true
+reportShadowedImports = true
+reportUninitializedInstanceVariable = true
+reportUnknownArgumentType = false
+reportUnknownMemberType = false
+reportUnknownParameterType = false
+reportUnknownVariableType = false
+reportUnnecessaryTypeIgnoreComment = true
+reportUnusedCallResult = true
+reportUnusedImport = false
+reportUnusedVariable = false
+typeCheckingMode = "strict"
 
 # pytest
 ["pyproject.toml".tool.pytest]

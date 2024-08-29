@@ -12,8 +12,8 @@ id = "run-uv-pip-compile"
 ["pyproject.toml".project]
 requires-python = ">= 3.12"
 
-# basedpyright
-["pyproject.toml".tool.basedpyright]
+# pyright
+["pyproject.toml".tool.pyright]
 pythonVersion = "3.12"
 
 # ruff
