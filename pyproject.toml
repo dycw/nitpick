@@ -15,7 +15,7 @@ readme = "README.md"
 requires-python = ">= 3.12"
 
 [project.optional-dependencies]
-dev = ["hatch"]
+dev = ["hatch >= 1.13.0, < 1.14"]
 
 # hatch
 [tool.hatch]
