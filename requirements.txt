@@ -20,7 +20,7 @@ hatch==1.13.0
     # via dycw-nitpick (pyproject.toml)
 hatchling==1.26.3
     # via hatch
-httpcore==1.0.6
+httpcore==1.0.7
     # via httpx
 httpx==0.27.2
     # via hatch
@@ -81,7 +81,7 @@ trove-classifiers==2024.10.21.16
     # via hatchling
 userpath==1.9.2
     # via hatch
-uv==0.5.2
+uv==0.5.4
     # via hatch
 virtualenv==20.27.1
     # via hatch
