@@ -5,17 +5,32 @@
 build-backend = "hatchling.build"
 requires = ["hatchling"]
 
+# dependency groups
+[dependency-groups]
+dev = [
+  "dycw-utilities[test]>=0.94.29",
+  "setuptools >= 75.9.1",  # https://github.com/theY4Kman/pytest-only/issues/14
+]
+
+
 # project
 [project]
 authors = [{name = "Derek Wan", email = "d.wan@icloud.com"}]
 dependencies = []
-dynamic = ["version"]
 name = "dycw-nitpick"
 readme = "README.md"
 requires-python = ">= 3.12"
+version = "0.3.19"
 
-[project.optional-dependencies]
-dev = ["hatch >= 1.13.0, < 1.14"]
+# bump-my-version
+[tool.bumpversion]
+allow_dirty = true
+current_version = "0.3.19"
+
+[[tool.bumpversion.files]]
+filename = "src/dycw_nitpick/__init__.py"
+replace = "__version__ = \"{new_version}\""
+search = "__version__ = \"{current_version}\""
 
 # hatch
 [tool.hatch]
@@ -25,6 +40,3 @@ sources = ["src"]
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/dycw_nitpick"]
-
-[tool.hatch.version]
-path = "src/dycw_nitpick/__init__.py"
