@@ -89,6 +89,14 @@ requires = ["hatchling"]
 ["pyproject.toml".project]
 readme = "README.md"
 
+# bump-my-version
+["pyproject.toml".tool.bumpversion]
+allow_dirty = true
+
+[["pyproject.toml".tool.bumpversion.files]]
+replace = "__version__ = \"{new_version}\""
+search = "__version__ = \"{current_version}\""
+
 # coverage
 ["pyproject.toml".tool.coverage]
 
@@ -109,8 +117,8 @@ parallel = true
 # hatch
 ["pyproject.toml".tool.hatch]
 
-["pyproject.toml".tool.hatch.build]
-sources = ["src"]
+["pyproject.toml".tool.hatch.build.targets.sdist]
+include = ["src"]
 
 # pyright
 ["pyproject.toml".tool.pyright]
