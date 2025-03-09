@@ -74,7 +74,7 @@ wheels = [
 
 [[package]]
 name = "dycw-nitpick"
-version = "0.3.21"
+version = "0.3.22"
 source = { editable = "." }
 
 [package.dev-dependencies]

@@ -1,9 +1,4 @@
 repos:
-  # no master
-  - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
-    hooks:
-      - id: no-commit-to-branch
   # fixers
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.9.10
@@ -20,13 +15,6 @@ repos:
     hooks:
       - id: pretty-format-toml
         args: [--autofix, --trailing-commas]
-  - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
-    hooks:
-      - id: end-of-file-fixer
-      - id: mixed-line-ending
-        args: [--fix=lf]
-      - id: trailing-whitespace
   - repo: https://github.com/astral-sh/uv-pre-commit
     rev: 0.6.5
     hooks:
@@ -34,6 +22,11 @@ repos:
         args: [--all-packages, --upgrade]
         stages: [pre-commit, pre-push]
   # linters
+  - repo: https://github.com/shellcheck-py/shellcheck-py
+    rev: v0.10.0.1
+    hooks:
+      - id: shellcheck
+  # fixers/linters
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
     hooks:
@@ -42,7 +35,8 @@ repos:
       - id: check-symlinks
       - id: destroyed-symlinks
       - id: detect-private-key
-  - repo: https://github.com/shellcheck-py/shellcheck-py
-    rev: v0.10.0.1
-    hooks:
-      - id: shellcheck
+      - id: end-of-file-fixer
+      - id: mixed-line-ending
+        args: [--fix=lf]
+      - id: no-commit-to-branch
+      - id: trailing-whitespace
