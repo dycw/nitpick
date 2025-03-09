@@ -93,10 +93,6 @@ readme = "README.md"
 ["pyproject.toml".tool.bumpversion]
 allow_dirty = true
 
-[["pyproject.toml".tool.bumpversion.files]]
-replace = "__version__ = \"{new_version}\""
-search = "__version__ = \"{current_version}\""
-
 # coverage
 ["pyproject.toml".tool.coverage]
 
