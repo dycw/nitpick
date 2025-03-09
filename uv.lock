@@ -87,8 +87,8 @@ dev = [
 
 [package.metadata.requires-dev]
 dev = [
-    { name = "dycw-utilities", extras = ["test"], specifier = ">=0.94.29" },
-    { name = "setuptools", specifier = ">=75.9.1" },
+    { name = "dycw-utilities", extras = ["test"], specifier = ">=0.95.21,<96" },
+    { name = "setuptools" },
 ]
 
 [[package]]
