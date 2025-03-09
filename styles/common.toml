@@ -5,7 +5,7 @@
 repo = "https://github.com/dycw/pre-commit-hooks"
 
 [[".pre-commit-config.yaml".repos.hooks]]
-id = "run-hatch-version"
+id = "run-bump-my-version"
 
 [[".pre-commit-config.yaml".repos.hooks]]
 id = "run-ruff-format"
@@ -47,12 +47,6 @@ id = "no-commit-to-branch"
 [[".pre-commit-config.yaml".repos.hooks]]
 id = "trailing-whitespace"
 
-[[".pre-commit-config.yaml".repos]]  # prettier
-repo = "https://github.com/pre-commit/mirrors-prettier"
-
-[[".pre-commit-config.yaml".repos.hooks]]
-id = "prettier"
-
 [[".pre-commit-config.yaml".repos]]  # pretty-format-toml
 repo = "https://github.com/macisamuele/language-formatters-pre-commit-hooks"
 
@@ -60,21 +54,12 @@ repo = "https://github.com/macisamuele/language-formatters-pre-commit-hooks"
 args = ["--autofix", "--trailing-commas"]
 id = "pretty-format-toml"
 
-[[".pre-commit-config.yaml".repos]]  # xml-formatter
-repo = "https://github.com/pamoller/xmlformatter"
-
-[[".pre-commit-config.yaml".repos.hooks]]
-id = "xml-formatter"
-
 [[".pre-commit-config.yaml".repos]]  # ruff
 repo = "https://github.com/astral-sh/ruff-pre-commit"
 
 [[".pre-commit-config.yaml".repos.hooks]]
 args = ["--fix"]
 id = "ruff"
-
-[[".pre-commit-config.yaml".repos.hooks]]
-id = "ruff-format"
 
 [[".pre-commit-config.yaml".repos]]  # shellcheck
 repo = "https://github.com/shellcheck-py/shellcheck-py"
