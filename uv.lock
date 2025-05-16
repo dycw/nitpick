@@ -80,14 +80,14 @@ dev = [
 
 [[package]]
 name = "dycw-utilities"
-version = "0.115.1"
+version = "0.116.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/94/ba/3a62f3d1202fbf715487bcbfab6deb4757acf3f7f61d5eea55a027f89bb3/dycw_utilities-0.115.1.tar.gz", hash = "sha256:3029e2973f16523a07ff686add5770fc69d3fd0e51ad40269480291c68e07ea1", size = 291812, upload-time = "2025-05-16T07:46:02.573Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/54/65/36c98d606c485c7a178d4e23606a4e67a4d64d2bf036f627a1503993ae3d/dycw_utilities-0.116.0.tar.gz", hash = "sha256:ed3ff5d08c28291fd2ed988f2724de29db7a8a29bc9d61265acb4278fb07883b", size = 292634, upload-time = "2025-05-16T13:02:50.226Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/52/99/8645e20fada8e9afaf1f4ca7c4e2e58b9616a0d17b69a501293a9ca9fe5f/dycw_utilities-0.115.1-py3-none-any.whl", hash = "sha256:0e437dbaee0997887b637a6775c6b263e3cb398e79591f8d6e68304ee8fea155", size = 186819, upload-time = "2025-05-16T07:45:58.992Z" },
+    { url = "https://files.pythonhosted.org/packages/2e/32/378fa1546acdb81e4cdea001e03e8e03c1d16cf485c84b2bad129c8dbacf/dycw_utilities-0.116.0-py3-none-any.whl", hash = "sha256:7e907f40ccde2f294c496d89f689abf3f8ab16fdff88a519dab8ca0b6081122d", size = 187353, upload-time = "2025-05-16T13:02:47.094Z" },
 ]
 
 [package.optional-dependencies]
