@@ -59,7 +59,7 @@ repo = "https://github.com/astral-sh/ruff-pre-commit"
 
 [[".pre-commit-config.yaml".repos.hooks]]
 args = ["--fix"]
-id = "ruff"
+id = "ruff-check"
 
 [[".pre-commit-config.yaml".repos]]  # shellcheck
 repo = "https://github.com/shellcheck-py/shellcheck-py"
