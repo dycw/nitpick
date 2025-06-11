@@ -164,6 +164,7 @@ unsafe-fixes = true
 
 ["pyproject.toml".tool.ruff.format]
 preview = true
+skip-magic-trailing-comma = true
 
 ["pyproject.toml".tool.ruff.lint]
 fixable = ["ALL"]
@@ -221,3 +222,4 @@ ban-relative-imports = "all"
 
 ["pyproject.toml".tool.ruff.lint.isort]
 required-imports = ["from __future__ import annotations"]
+skip-magic-trailing-comma = true
