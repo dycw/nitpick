@@ -7,9 +7,6 @@ repo = "https://github.com/dycw/pre-commit-hooks"
 [[".pre-commit-config.yaml".repos.hooks]]
 id = "run-bump-my-version"
 
-[[".pre-commit-config.yaml".repos.hooks]]
-id = "run-ruff-format"
-
 [[".pre-commit-config.yaml".repos]]  # nitpick
 repo = "https://github.com/andreoliwa/nitpick"
 
