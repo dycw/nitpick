@@ -150,6 +150,7 @@ addopts = [
   "-ra",
   "-vv",
   "--color=auto",
+  "--pdbcls=pudb.debugger:Debugger",
   "--strict-markers",
 ]
 filterwarnings = ["error"]
