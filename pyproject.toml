@@ -8,8 +8,7 @@ requires = ["hatchling"]
 # dependency groups
 [dependency-groups]
 dev = [
-  "dycw-utilities[test]>=0.95.21,<96",
-  "setuptools",  # https://github.com/theY4Kman/pytest-only/issues/14
+  "dycw-utilities[test]",
 ]
 
 # project
