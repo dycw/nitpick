@@ -153,6 +153,9 @@ addopts = [
   "--pdbcls=pudb.debugger:Debugger",
   "--strict-markers",
 ]
+asyncio_default_fixture_loop_scope = "function"
+asyncio_mode = "auto"
+collect_imported_tests = false
 filterwarnings = ["error"]
 minversion = "8.0"
 testpaths = ["src/tests"]
