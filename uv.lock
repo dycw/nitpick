@@ -70,7 +70,7 @@ wheels = [
 
 [[package]]
 name = "dycw-nitpick"
-version = "0.3.33"
+version = "0.3.34"
 source = { editable = "." }
 
 [package.dev-dependencies]
@@ -97,7 +97,7 @@ wheels = [
 
 [[package]]
 name = "dycw-utilities"
-version = "0.139.9"
+version = "0.140.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "atomicwrites" },
@@ -105,9 +105,9 @@ dependencies = [
     { name = "tzlocal" },
     { name = "whenever" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/a6/ef/08b94854858cc28eda78c4ef5fadfe106a83a1f12538b0ddabbaa7c6b157/dycw_utilities-0.139.9.tar.gz", hash = "sha256:4837bbcf3cb956df9bace4e027521f0a7960add1bb1eac0594a03f9b485cde4e", size = 291074, upload-time = "2025-07-04T05:37:21.063Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/04/3a/73195029cc0adf6eef01084de08deb7ab48bdbd8c8b400f4b50793d8bb77/dycw_utilities-0.140.2.tar.gz", hash = "sha256:969a38a263f215bc602383c9c5589be970b04b9a74e508143181114fdc4df345", size = 294072, upload-time = "2025-07-09T03:55:46.017Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ae/68/9a83e5182b7ca3c5fb5e74c4d77424114b1cce63db857c4e8c163f6ba29b/dycw_utilities-0.139.9-py3-none-any.whl", hash = "sha256:2765c67d87fe39f1510bcd58267dbb02d3f247c432a8ebb5c9b699431f9d21f3", size = 189245, upload-time = "2025-07-04T05:37:18.186Z" },
+    { url = "https://files.pythonhosted.org/packages/b4/dd/e21b68720b3e0153f80d5d3066a58911fdb7fe3bf9d468c3975c695aaaba/dycw_utilities-0.140.2-py3-none-any.whl", hash = "sha256:4064219f7b75c36a4aaae7190a9c503d81f98e75b6aaeab6846ba8fe8d97217e", size = 190891, upload-time = "2025-07-09T03:55:43.168Z" },
 ]
 
 [package.optional-dependencies]
@@ -140,15 +140,15 @@ wheels = [
 
 [[package]]
 name = "hypothesis"
-version = "6.135.24"
+version = "6.135.26"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "attrs" },
     { name = "sortedcontainers" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/cf/ae/f846b67ce9fc80cf51cece6b7adaa3fe2de4251242d142e241ce5d4aa26f/hypothesis-6.135.24.tar.gz", hash = "sha256:e301aeb2691ec0a1f62bfc405eaa966055d603e328cd854c1ed59e1728e35ab6", size = 454011, upload-time = "2025-07-03T02:46:51.776Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/da/83/15c4e30561a0d8c8d076c88cb159187823d877118f34c851ada3b9b02a7b/hypothesis-6.135.26.tar.gz", hash = "sha256:73af0e46cd5039c6806f514fed6a3c185d91ef88b5a1577477099ddbd1a2e300", size = 454523, upload-time = "2025-07-05T04:59:45.443Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ed/cb/c38acf27826a96712302229622f32dd356b9c4fbe52a3e9f615706027af8/hypothesis-6.135.24-py3-none-any.whl", hash = "sha256:88ed21fbfa481ca9851a9080841b3caca14cd4ed51a165dfae8006325775ee72", size = 520920, upload-time = "2025-07-03T02:46:48.286Z" },
+    { url = "https://files.pythonhosted.org/packages/3c/78/db4fdc464219455f8dde90074660c3faf8429101b2d1299cac7d219e3176/hypothesis-6.135.26-py3-none-any.whl", hash = "sha256:fa237cbe2ae2c31d65f7230dcb866139ace635dcfec6c30dddf25974dd8ff4b9", size = 521517, upload-time = "2025-07-05T04:59:42.061Z" },
 ]
 
 [[package]]
@@ -357,16 +357,16 @@ wheels = [
 
 [[package]]
 name = "pytest-regressions"
-version = "2.8.0"
+version = "2.8.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "pytest" },
     { name = "pytest-datadir" },
     { name = "pyyaml" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/c5/ef/48083b093c1291fac24d0556b8ddb88310977c5b7d6c7abe73cc87647901/pytest_regressions-2.8.0.tar.gz", hash = "sha256:775044e17117f5427df2caad3ab1c66889abe770a0ce2bc3f24fdeac99af76fe", size = 116454, upload-time = "2025-05-30T17:46:21.498Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/c9/20/f861ea5b5db791ba1f778032b294b0a454eff2f6c2b3f8a88d36d61c0a63/pytest_regressions-2.8.1.tar.gz", hash = "sha256:20080d44cf46b40407956af5e44a7f932cbc3159018de81fb51e62b97e96a5fb", size = 116486, upload-time = "2025-07-04T12:54:36.473Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/7f/6a/cf0a9929a94912e7123dd3ab23658fce5c3bdef12cb270da84348282feda/pytest_regressions-2.8.0-py3-none-any.whl", hash = "sha256:2926f37efa5fd6793806b10352e274c5284a5469a845aeab6243e86f9214766f", size = 24859, upload-time = "2025-05-30T17:46:19.722Z" },
+    { url = "https://files.pythonhosted.org/packages/46/6e/416d44b81b42482c2b7b553606c79d7f3e32e686d42f3f24b04a7f8cf56f/pytest_regressions-2.8.1-py3-none-any.whl", hash = "sha256:bcae249df5214225bbe4bd77c146d8f331f19b0b26805486533b1e49680950a5", size = 24861, upload-time = "2025-07-04T12:54:35.051Z" },
 ]
 
 [[package]]
@@ -469,11 +469,11 @@ wheels = [
 
 [[package]]
 name = "typing-extensions"
-version = "4.14.0"
+version = "4.14.1"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/d1/bc/51647cd02527e87d05cb083ccc402f93e441606ff1f01739a62c8ad09ba5/typing_extensions-4.14.0.tar.gz", hash = "sha256:8676b788e32f02ab42d9e7c61324048ae4c6d844a399eebace3d4979d75ceef4", size = 107423, upload-time = "2025-06-02T14:52:11.399Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/98/5a/da40306b885cc8c09109dc2e1abd358d5684b1425678151cdaed4731c822/typing_extensions-4.14.1.tar.gz", hash = "sha256:38b39f4aeeab64884ce9f74c94263ef78f3c22467c8724005483154c26648d36", size = 107673, upload-time = "2025-07-04T13:28:34.16Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/69/e0/552843e0d356fbb5256d21449fa957fa4eff3bbc135a74a691ee70c7c5da/typing_extensions-4.14.0-py3-none-any.whl", hash = "sha256:a1514509136dd0b477638fc68d6a91497af5076466ad0fa6c338e44e359944af", size = 43839, upload-time = "2025-06-02T14:52:10.026Z" },
+    { url = "https://files.pythonhosted.org/packages/b5/00/d631e67a838026495268c2f6884f3711a15a9a2a96cd244fdaea53b823fb/typing_extensions-4.14.1-py3-none-any.whl", hash = "sha256:d1e1e3b58374dc93031d6eda2420a48ea44a36c2b4766a4fdeb3710755731d76", size = 43906, upload-time = "2025-07-04T13:28:32.743Z" },
 ]
 
 [[package]]
