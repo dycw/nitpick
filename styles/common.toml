@@ -219,7 +219,11 @@ ignore = [
   "ISC001",  # single-line-implicit-string-concatenation
   "ISC002",  # multi-line-implicit-string-concatenation
 ]
-select = ["ALL"]
+preview = true
+select = [
+  "ALL",
+  "RUF022",  # unsorted-dunder-all
+]
 
 ["pyproject.toml".tool.ruff.lint.extend-per-file-ignores]
 "src/tests/**/*.py" = ["S101"]  # assert
