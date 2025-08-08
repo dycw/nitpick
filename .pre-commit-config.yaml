@@ -1,13 +1,13 @@
 repos:
   # fixers
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.12.2
+    rev: v0.12.8
     hooks:
       - id: ruff-check
         args: [--fix]
       - id: ruff-format
   - repo: https://github.com/dycw/pre-commit-hooks
-    rev: 0.11.1
+    rev: 0.11.3
     hooks:
       - id: run-bump-my-version
   - repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
@@ -16,7 +16,7 @@ repos:
       - id: pretty-format-toml
         args: [--autofix, --trailing-commas]
   - repo: https://github.com/astral-sh/uv-pre-commit
-    rev: 0.7.19
+    rev: 0.8.6
     hooks:
       - id: uv-sync # after version bump
         args: [--all-packages, --upgrade]

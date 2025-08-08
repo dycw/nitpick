@@ -150,7 +150,6 @@ addopts = [
   "-ra",
   "-vv",
   "--color=auto",
-  "--pdbcls=pudb.debugger:Debugger",
   "--strict-markers",
 ]
 asyncio_default_fixture_loop_scope = "function"
