@@ -71,21 +71,24 @@ id = "ruff-check"
 [[".pre-commit-config.yaml".repos.hooks]]
 id = "ruff-format"
 
-[[".pre-commit-config.yaml".repos]]  # ruff
-repo = "https://github.com/astral-sh/uv-pre-commit"
-
-[[".pre-commit-config.yaml".repos.hooks]]
-args = ["--upgrade"]
-id = "uv-lock"
-
-[[".pre-commit-config.yaml".repos.hooks]]
-id = "ruff-format"
-
 [[".pre-commit-config.yaml".repos]]  # shellcheck
 repo = "https://github.com/shellcheck-py/shellcheck-py"
 
 [[".pre-commit-config.yaml".repos.hooks]]
 id = "shellcheck"
+
+[[".pre-commit-config.yaml".repos]]  # shfmt
+repo = "https://github.com/scop/pre-commit-shfmt"
+
+[[".pre-commit-config.yaml".repos.hooks]]
+id = "shfmt"
+
+[[".pre-commit-config.yaml".repos]]  # uv
+repo = "https://github.com/astral-sh/uv-pre-commit"
+
+[[".pre-commit-config.yaml".repos.hooks]]
+args = ["--upgrade"]
+id = "uv-lock"
 
 # nitpick
 [nitpick.files.absent]
