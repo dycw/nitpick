@@ -9,6 +9,8 @@ requires = ["hatchling"]
 [dependency-groups]
 dev = [
   "dycw-utilities[test]",
+  "pyright[nodejs]",
+  "rich",
 ]
 
 # project
