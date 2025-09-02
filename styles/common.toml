@@ -7,6 +7,12 @@ repo = "https://github.com/dycw/pre-commit-hooks"
 [[".pre-commit-config.yaml".repos.hooks]]
 id = "run-bump-my-version"
 
+[[".pre-commit-config.yaml".repos.hooks]]
+id = "replace-sequence-str"
+
+[[".pre-commit-config.yaml".repos.hooks]]
+id = "format-requirements"
+
 [[".pre-commit-config.yaml".repos]]  # nitpick
 repo = "https://github.com/andreoliwa/nitpick"
 
@@ -18,6 +24,10 @@ repo = "https://github.com/pre-commit/pre-commit-hooks"
 
 [[".pre-commit-config.yaml".repos.hooks]]
 id = "check-executables-have-shebangs"
+
+[[".pre-commit-config.yaml".repos.hooks]]
+args = ["--autofix"]
+id = "pretty-format-json"
 
 [[".pre-commit-config.yaml".repos.hooks]]
 id = "check-merge-conflict"
@@ -57,6 +67,16 @@ repo = "https://github.com/astral-sh/ruff-pre-commit"
 [[".pre-commit-config.yaml".repos.hooks]]
 args = ["--fix"]
 id = "ruff-check"
+
+[[".pre-commit-config.yaml".repos.hooks]]
+id = "ruff-format"
+
+[[".pre-commit-config.yaml".repos]]  # ruff
+repo = "https://github.com/astral-sh/uv-pre-commit"
+
+[[".pre-commit-config.yaml".repos.hooks]]
+args = ["--upgrade"]
+id = "uv-lock"
 
 [[".pre-commit-config.yaml".repos.hooks]]
 id = "ruff-format"
