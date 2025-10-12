@@ -105,8 +105,8 @@ id = "uv-lock"
 
 # build-system
 ["pyproject.toml".build-system]
-build-backend = "hatchling.build"
-requires = ["hatchling"]
+build-backend = "uv_build"
+requires = ["uv_build"]
 
 # project
 ["pyproject.toml".project]
@@ -132,12 +132,6 @@ skip_empty = true
 branch = true
 data_file = ".coverage/data"
 parallel = true
-
-# hatch
-["pyproject.toml".tool.hatch]
-
-["pyproject.toml".tool.hatch.build.targets.sdist]
-include = ["src"]
 
 # pyright
 ["pyproject.toml".tool.pyright]
