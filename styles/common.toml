@@ -213,7 +213,6 @@ ignore = [
   "PLR2004",  # magic-value-comparison
   "PT012",  # pytest-raises-with-multiple-statements
   "PT013",  # pytest-incorrect-pytest-import
-  "S311",  # suspicious-non-cryptographic-random-usage
   "S202",  # tarfile-unsafe-members
   "S310",  # suspicious-url-open-usage
   "S311",  # suspicious-non-cryptographic-random-usage
