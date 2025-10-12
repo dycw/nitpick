@@ -20,12 +20,12 @@ dependencies = []
 name = "dycw-nitpick"
 readme = "README.md"
 requires-python = ">= 3.14"
-version = "0.4.1"
+version = "0.4.2"
 
 # bump-my-version
 [tool.bumpversion]
 allow_dirty = true
-current_version = "0.4.1"
+current_version = "0.4.2"
 
 [[tool.bumpversion.files]]
 filename = "src/dycw_nitpick/__init__.py"
