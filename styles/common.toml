@@ -60,9 +60,9 @@
   [[".pre-commit-config.yaml".repos.hooks]]
     args = [
       "--option",
-      "indent_entries=true",
-      "--option",
       "indent_tables=true",
+      "--option",
+      "indent_entries=true",
       "--option",
       "reorder_keys=true",
     ]
