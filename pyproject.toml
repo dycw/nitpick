@@ -2,32 +2,28 @@
 
 # build-system
 [build-system]
-build-backend = "uv_build"
-requires = ["uv_build"]
+  build-backend = "uv_build"
+  requires = ["uv_build"]
 
 # dependency groups
 [dependency-groups]
-dev = [
-  "dycw-utilities[test]",
-  "pyright[nodejs]",
-  "rich",
-]
+  dev = ["dycw-utilities[test]", "pyright[nodejs]", "rich"]
 
 # project
 [project]
-authors = [{name = "Derek Wan", email = "d.wan@icloud.com"}]
-dependencies = []
-name = "dycw-nitpick"
-readme = "README.md"
-requires-python = ">= 3.14"
-version = "0.4.6"
+  authors = [{ name = "Derek Wan", email = "d.wan@icloud.com" }]
+  dependencies = []
+  name = "dycw-nitpick"
+  readme = "README.md"
+  requires-python = ">= 3.14"
+  version = "0.4.7"
 
 # bump-my-version
 [tool.bumpversion]
-allow_dirty = true
-current_version = "0.4.6"
+  allow_dirty = true
+  current_version = "0.4.7"
 
-[[tool.bumpversion.files]]
-filename = "src/dycw_nitpick/__init__.py"
-replace = "__version__ = \"{new_version}\""
-search = "__version__ = \"{current_version}\""
+  [[tool.bumpversion.files]]
+    filename = "src/dycw_nitpick/__init__.py"
+    replace = "__version__ = \"{new_version}\""
+    search = "__version__ = \"{current_version}\""
