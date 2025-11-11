@@ -1,101 +1,101 @@
-#
+[".pre-commit-config.yaml"]
 
-# pre-commit
-[[".pre-commit-config.yaml".repos]] # dycw
-  repo = "https://github.com/dycw/pre-commit-hooks"
+  # pre-commit
+  [[".pre-commit-config.yaml".repos]] # dycw
+    repo = "https://github.com/dycw/pre-commit-hooks"
 
-  [[".pre-commit-config.yaml".repos.hooks]]
-    id = "run-bump-my-version"
+    [[".pre-commit-config.yaml".repos.hooks]]
+      id = "run-bump-my-version"
 
-  [[".pre-commit-config.yaml".repos.hooks]]
-    id = "replace-sequence-str"
+    [[".pre-commit-config.yaml".repos.hooks]]
+      id = "replace-sequence-str"
 
-  [[".pre-commit-config.yaml".repos.hooks]]
-    id = "format-requirements"
+    [[".pre-commit-config.yaml".repos.hooks]]
+      id = "format-requirements"
 
-[[".pre-commit-config.yaml".repos]] # nitpick
-  repo = "https://github.com/andreoliwa/nitpick"
+  [[".pre-commit-config.yaml".repos]] # nitpick
+    repo = "https://github.com/andreoliwa/nitpick"
 
-  [[".pre-commit-config.yaml".repos.hooks]]
-    id = "nitpick-check"
+    [[".pre-commit-config.yaml".repos.hooks]]
+      id = "nitpick-check"
 
-[[".pre-commit-config.yaml".repos]] # pre-commit
-  repo = "https://github.com/pre-commit/pre-commit-hooks"
+  [[".pre-commit-config.yaml".repos]] # pre-commit
+    repo = "https://github.com/pre-commit/pre-commit-hooks"
 
-  [[".pre-commit-config.yaml".repos.hooks]]
-    id = "check-executables-have-shebangs"
+    [[".pre-commit-config.yaml".repos.hooks]]
+      id = "check-executables-have-shebangs"
 
-  [[".pre-commit-config.yaml".repos.hooks]]
-    args = ["--autofix"]
-    id = "pretty-format-json"
+    [[".pre-commit-config.yaml".repos.hooks]]
+      args = ["--autofix"]
+      id = "pretty-format-json"
 
-  [[".pre-commit-config.yaml".repos.hooks]]
-    id = "check-merge-conflict"
+    [[".pre-commit-config.yaml".repos.hooks]]
+      id = "check-merge-conflict"
 
-  [[".pre-commit-config.yaml".repos.hooks]]
-    id = "check-symlinks"
+    [[".pre-commit-config.yaml".repos.hooks]]
+      id = "check-symlinks"
 
-  [[".pre-commit-config.yaml".repos.hooks]]
-    id = "destroyed-symlinks"
+    [[".pre-commit-config.yaml".repos.hooks]]
+      id = "destroyed-symlinks"
 
-  [[".pre-commit-config.yaml".repos.hooks]]
-    id = "detect-private-key"
+    [[".pre-commit-config.yaml".repos.hooks]]
+      id = "detect-private-key"
 
-  [[".pre-commit-config.yaml".repos.hooks]]
-    id = "end-of-file-fixer"
+    [[".pre-commit-config.yaml".repos.hooks]]
+      id = "end-of-file-fixer"
 
-  [[".pre-commit-config.yaml".repos.hooks]]
-    args = ["--fix=lf"]
-    id = "mixed-line-ending"
+    [[".pre-commit-config.yaml".repos.hooks]]
+      args = ["--fix=lf"]
+      id = "mixed-line-ending"
 
-  [[".pre-commit-config.yaml".repos.hooks]]
-    id = "no-commit-to-branch"
+    [[".pre-commit-config.yaml".repos.hooks]]
+      id = "no-commit-to-branch"
 
-  [[".pre-commit-config.yaml".repos.hooks]]
-    id = "trailing-whitespace"
+    [[".pre-commit-config.yaml".repos.hooks]]
+      id = "trailing-whitespace"
 
-[[".pre-commit-config.yaml".repos]] # pretty-format-toml
-  repo = "https://github.com/compwa/taplo-pre-commit"
+  [[".pre-commit-config.yaml".repos]] # pretty-format-toml
+    repo = "https://github.com/compwa/taplo-pre-commit"
 
-  [[".pre-commit-config.yaml".repos.hooks]]
-    args = [
-      "--option",
-      "indent_tables=true",
-      "--option",
-      "indent_entries=true",
-      "--option",
-      "reorder_keys=true",
-    ]
-    id = "taplo-format"
+    [[".pre-commit-config.yaml".repos.hooks]]
+      args = [
+        "--option",
+        "indent_tables=true",
+        "--option",
+        "indent_entries=true",
+        "--option",
+        "reorder_keys=true",
+      ]
+      id = "taplo-format"
 
-[[".pre-commit-config.yaml".repos]] # ruff
-  repo = "https://github.com/astral-sh/ruff-pre-commit"
+  [[".pre-commit-config.yaml".repos]] # ruff
+    repo = "https://github.com/astral-sh/ruff-pre-commit"
 
-  [[".pre-commit-config.yaml".repos.hooks]]
-    args = ["--fix"]
-    id = "ruff-check"
+    [[".pre-commit-config.yaml".repos.hooks]]
+      args = ["--fix"]
+      id = "ruff-check"
 
-  [[".pre-commit-config.yaml".repos.hooks]]
-    id = "ruff-format"
+    [[".pre-commit-config.yaml".repos.hooks]]
+      id = "ruff-format"
 
-[[".pre-commit-config.yaml".repos]] # shellcheck
-  repo = "https://github.com/shellcheck-py/shellcheck-py"
+  [[".pre-commit-config.yaml".repos]] # shellcheck
+    repo = "https://github.com/shellcheck-py/shellcheck-py"
 
-  [[".pre-commit-config.yaml".repos.hooks]]
-    id = "shellcheck"
+    [[".pre-commit-config.yaml".repos.hooks]]
+      id = "shellcheck"
 
-[[".pre-commit-config.yaml".repos]] # shfmt
-  repo = "https://github.com/scop/pre-commit-shfmt"
+  [[".pre-commit-config.yaml".repos]] # shfmt
+    repo = "https://github.com/scop/pre-commit-shfmt"
 
-  [[".pre-commit-config.yaml".repos.hooks]]
-    id = "shfmt"
+    [[".pre-commit-config.yaml".repos.hooks]]
+      id = "shfmt"
 
-[[".pre-commit-config.yaml".repos]] # uv
-  repo = "https://github.com/astral-sh/uv-pre-commit"
+  [[".pre-commit-config.yaml".repos]] # uv
+    repo = "https://github.com/astral-sh/uv-pre-commit"
 
-  [[".pre-commit-config.yaml".repos.hooks]]
-    args = ["--upgrade"]
-    id = "uv-lock"
+    [[".pre-commit-config.yaml".repos.hooks]]
+      args = ["--upgrade"]
+      id = "uv-lock"
 
 # nitpick
 [nitpick.files.absent]
