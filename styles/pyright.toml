@@ -3,8 +3,8 @@
   [[".pre-commit-config.yaml".repos]]
     repo = "local"
 
+    # pyright
     [[".pre-commit-config.yaml".repos.hooks]]
-      # pyright
       entry = "pyright"
       id = "pyright"
       language = "system"
