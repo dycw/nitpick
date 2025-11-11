@@ -4,6 +4,7 @@
     repo = "local"
 
     [[".pre-commit-config.yaml".repos.hooks]]
+      # pyright
       entry = "pyright"
       id = "pyright"
       language = "system"
