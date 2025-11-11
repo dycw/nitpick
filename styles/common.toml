@@ -170,16 +170,16 @@
       typeCheckingMode = "strict"
 
     ["pyproject.toml".tool.pytest]
-      ["pyproject.toml".tool.pytest.ini_options]
-        addopts = ["--color=auto", "-ra", "-vv"]
-        asyncio_default_fixture_loop_scope = "function"
-        asyncio_mode = "auto"
-        collect_imported_tests = false
-        filterwarnings = ["error"]
-        minversion = "9.0"
-        strict = true
-        testpaths = ["src/tests"]
-        xfail_strict = true
+      addopts = ["--color=auto", "-ra", "-vv"]
+      asyncio_default_fixture_loop_scope = "function"
+      asyncio_mode = "auto"
+      collect_imported_tests = false
+      empty_parameter_set_mark = "fail_at_collect"
+      filterwarnings = ["error"]
+      minversion = "9.0"
+      strict = true
+      testpaths = ["src/tests"]
+      xfail_strict = true
 
     ["pyproject.toml".tool.ruff]
       src = ["src"]
