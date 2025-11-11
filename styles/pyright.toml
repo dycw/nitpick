@@ -1,12 +1,12 @@
-#
+[".pre-commit-config.yaml"]
 
-# pyright
-[[".pre-commit-config.yaml".repos]]
-  repo = "local"
+  [[".pre-commit-config.yaml".repos]]
+    repo = "local"
 
-  [[".pre-commit-config.yaml".repos.hooks]]
-    entry = "pyright"
-    id = "pyright"
-    language = "system"
-    name = "pyright"
-    types = ["python"]
+    [[".pre-commit-config.yaml".repos.hooks]]
+      # pyright
+      entry = "pyright"
+      id = "pyright"
+      language = "system"
+      name = "pyright"
+      types = ["python"]
