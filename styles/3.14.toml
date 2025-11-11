@@ -1,13 +1,11 @@
 ["pyproject.toml"]
 
-  # project
   ["pyproject.toml".project]
     requires-python = ">= 3.14"
 
-  # pyright
-  ["pyproject.toml".tool.pyright]
-    pythonVersion = "3.14"
+  ["pyproject.toml".tool]
+    ["pyproject.toml".tool.pyright]
+      pythonVersion = "3.14"
 
-  # ruff
-  ["pyproject.toml".tool.ruff]
-    target-version = "py314"
+    ["pyproject.toml".tool.ruff]
+      target-version = "py314"
