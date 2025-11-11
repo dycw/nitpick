@@ -179,6 +179,7 @@
       minversion = "9.0"
       strict = true
       testpaths = ["src/tests"]
+      timeout = "600"
       xfail_strict = true
 
     ["pyproject.toml".tool.ruff]
